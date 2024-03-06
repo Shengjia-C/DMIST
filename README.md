@@ -1,4 +1,4 @@
-# DMIST-Benchmark
+# DMIST-Benchmark 
 ## ***Dense Moving Infrared Small Target Detection***
 
 The DMIST benchmark datasets and baseline model implementation of the paper **Towards Dense Moving Infrared Small Target Detection: New Datasets and Baseline** `(under review)`
@@ -29,26 +29,26 @@ DMIST
 ├─60_coco_val.json
 ├─100_coco_val.json
 ├─images
-    ├─train
-        ├─data5
-            ├─0.bmp
-            ├─0.txt
-            ├─ ...
-            ├─2999.bmp
-            ├─2999.txt
-            ├─ ...
-  	├─ ...
-    ├─test60
-        ├─data6
-            ├─0.bmp
-            ├─0.txt
-            ├─ ...
-            ├─398.bmp
-            ├─398.txt
-            ├─ ...
-        ├─ ...
-    ├─test100
-        ├─ ...
+│   ├─train
+│   │   ├─data5
+│   │   │   ├─0.bmp
+│   │   │   ├─0.txt
+│   │   │   ├─ ...
+│   │   │   ├─2999.bmp
+│   │   │   ├─2999.txt
+│   │   │   ├─ ...
+│   │   ├─ ...
+│   ├─test60
+│   │   ├─data6
+│   │   │   ├─0.bmp
+│   │   │   ├─0.txt
+│   │   │   ├─ ...
+│   │   │   ├─398.bmp
+│   │   │   ├─398.txt
+│   │   │   ├─ ...
+│   │   ├─ ...
+│   ├─test100
+│   │   ├─ ...
 ```
 
 
