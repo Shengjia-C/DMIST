@@ -24,13 +24,34 @@ python utils_coco/coco_to_txt.py
 - The folder structure should look like this:
 ```
 DMIST
-├──coco_train.json
-├──60_coco_val.json
-├──100_coco_val.json
-├──images
-    ├──train
-    ├──test60
-    ├──test100
+├─coco_train.json
+├─60_coco_val.json
+├─100_coco_val.json
+├─images
+            ├─train
+                     ├─data5
+                               ├─0.bmp
+                               ├─0.txt
+                               ├─ ...
+                               ├─2999.bmp
+                               ├─2999.txt
+                       ├─ ...
+             ├─test60
+            	    ├─data6
+	    	              ├─0.bmp
+                               ├─0.txt
+                               ├─ ...
+                               ├─398.bmp
+                               ├─398.txt
+                     ├─ ...
+              ├─test100
+                     ├─data6
+	    	              ├─0.bmp
+                               ├─0.txt
+                               ├─ ...
+                               ├─398.bmp
+                               ├─398.txt
+                     ├─ ...
 ```
 
 
@@ -56,6 +77,9 @@ CUDA_VISIBLE_DEVICES=0 python train.py
 
 ### Test
 - Usually `model_best.pth` is not necessarily the best model. The best model may have a lower val_loss or a higher AP50 during verification.
+```python
+"model_path": '/home/LASNet/logs/model.pth'
+```
 - You need to change the path of the `json file` of test sets. For example:
 ```python
 #Use DMIST-100 dataset for test.
