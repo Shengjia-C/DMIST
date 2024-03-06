@@ -28,30 +28,23 @@ DMIST
 ├─60_coco_val.json
 ├─100_coco_val.json
 ├─images
-            ├─train
-                     ├─data5
-                               ├─0.bmp
-                               ├─0.txt
-                               ├─ ...
-                               ├─2999.bmp
-                               ├─2999.txt
-                       ├─ ...
-             ├─test60
-            	    ├─data6
-	    	              ├─0.bmp
-                               ├─0.txt
-                               ├─ ...
-                               ├─398.bmp
-                               ├─398.txt
-                     ├─ ...
-              ├─test100
-                     ├─data6
-	    	              ├─0.bmp
-                               ├─0.txt
-                               ├─ ...
-                               ├─398.bmp
-                               ├─398.txt
-                     ├─ ...
+    ├─train
+        ├─data5
+            ├─0.bmp
+            ├─0.txt
+            ├─ ...
+            ├─2999.bmp
+            ├─2999.txt
+            ├─ ...
+    ├─test60
+        ├─data6
+	    	├─0.bmp
+            ├─0.txt
+            ├─ ...
+            ├─398.bmp
+            ├─398.txt
+    ├─test10
+        ├─ ...
 ```
 
 
@@ -91,6 +84,11 @@ python test.py
 ```
 
 ### Visulization
+- We support `video` and `single-frame image` prediction.
+```python
+# mode = "video" #Predict a sequence
+mode = "predict"  #Predict a single-frame image 
+```
 ```python
 python predict.py
 ```
@@ -110,7 +108,4 @@ If any questions, kindly contact with Shengjia Chen via e-mail: csj_uestc@126.co
 ## References
 1. X. Shi, Z. Chen, H. Wang, D.-Y. Yeung, W.-K. Wong, and W.-c. Woo, “Convolutional lstm network: A machine learning approach for precipitation nowcasting,” Advances in Neural Information Processing Systems, vol. 28, 2015.
 2. Z. Ge, S. Liu, F. Wang, Z. Li, and J. Sun, “Yolox: Exceeding yolo series in 2021,” arXiv preprint arXiv:2107.08430, 2021.
-
-
-
 
