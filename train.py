@@ -52,7 +52,7 @@ if __name__ == "__main__":
     save_period         = 1
     save_dir            = 'logs'
     eval_flag           = True
-    eval_period         = 1
+    eval_period         = 100
     num_workers         = 4
     
     train_annotation_path = '/home/LASNet/DMIST_train.txt'
